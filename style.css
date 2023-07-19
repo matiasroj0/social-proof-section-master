@@ -1,0 +1,270 @@
+:root {
+    /* primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /* neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* --------- */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.card {
+    max-width: 75rem;
+    display: flex;
+    flex-direction:column;
+    gap: 5rem;
+    padding: 0 3rem;
+}
+
+.review-stats {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+}
+
+.review-stats > * {
+    width: 50%;
+} 
+
+.review-stats-left-side h2 {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 2rem;
+    padding: 1rem 0;
+}
+
+.review-stats-left-side p {
+    color: var(--dark-grayish-magenta);
+    font-size: 1.1rem;
+}
+
+.rated-div {
+    background-color: var(--light-grayish-magenta);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.rated-div p {
+    font-weight: bold;
+    font-size: .9rem;
+    color: var(--very-dark-magenta);
+}
+
+.mid {
+    margin-left: 2rem;
+}
+
+.bottom {
+    margin-left: 4rem;
+}
+
+.review-stats-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stars-div {
+    display: flex;
+    gap: .3rem;
+    padding: .8rem 0;
+}
+
+.stars-div img {
+    width: 13%;
+}
+
+.reviews {
+    display: flex;
+    gap: 2rem;
+}
+
+.review {
+    background-color: var(--very-dark-magenta);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    color: var(--white);
+}
+
+.review-user-img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+    gap: 1.5rem;
+}
+
+.user-category {
+    color: var(--soft-pink);
+}
+
+.review-review p {
+    padding: 1.3rem 0;
+    font-size: .9rem;
+}
+
+.review-mid {
+    position: relative;
+    top: 1rem;
+}
+
+.review-right {
+    position: relative;
+    top: 2rem;
+}
+
+@media (max-width: 900px) {
+    body {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .card {
+        max-width: 40rem;
+        gap: 2rem;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    
+    .review-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content:flex-start;
+    }
+    
+    .review-stats > * {
+        width:auto;
+    } 
+    
+    .review-stats-left-side h2 {
+        font-size: 2.9rem;
+        padding: 1rem 0;
+        padding-bottom: 2rem;
+    }
+    
+    .review-stats-left-side p {
+        padding-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .rated-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .1rem;
+    }
+    
+    .rated-div p {
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+    
+    .mid {
+        margin-left:initial;
+    }
+    
+    .bottom {
+        margin-left:initial;
+    }
+    
+    .review-stats-right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+    }
+    
+    .stars-div {
+        display: flex;
+        gap: .5rem;
+        padding: .8rem 0;
+    }
+    
+    .stars-div img {
+        width: 15%;
+    }
+    
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        padding-top: 2rem;
+    }
+    
+    .review {
+        border-radius: .5rem;
+        padding: 1.5rem;
+        color: var(--white);
+    }
+    
+    .review-user-img {
+        border-radius: 50%;
+        width: 12%;
+    }
+    
+    .review-user {
+        display: flex;
+        align-items: center;
+        padding-top: .5rem;
+        gap: 1.5rem;
+    }
+    
+    .review-review p {
+        padding: 1.3rem 0;
+        font-size: 1rem;
+        text-align: initial;
+    }
+    
+    
+}
