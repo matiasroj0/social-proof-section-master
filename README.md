@@ -8,7 +8,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://jocular-sherbet-fc48c2.netlify.app/
 
 ### The challenge
 
